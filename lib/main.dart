@@ -82,6 +82,15 @@ class _AppState extends State<App> {
                 },
                 child: const Text('Post'),
               ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Posts()),
+                  );
+                },
+                child: const Text("Show posts"),
+              ),
             ],
           ),
         ),
